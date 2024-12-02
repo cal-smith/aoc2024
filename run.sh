@@ -11,5 +11,7 @@
         ./main
     elif [[ "$2" == "cl" ]]; then
         sbcl --script main.lsp
+    elif [[ "$2" == "ml" ]]; then
+        ocaml main.ml
     fi
 )
