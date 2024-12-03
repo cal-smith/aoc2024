@@ -7,8 +7,7 @@
         clang++ main.cpp -std=c++23 -stdlib=libc++ -o main.bin
         ./main.bin
     elif [[ "$2" == "nim" ]]; then
-        nim c main.nim
-        ./main
+        nim --deepcopy:on r main.nim
     elif [[ "$2" == "cl" ]]; then
         sbcl --script main.lsp
     elif [[ "$2" == "ml" ]]; then
